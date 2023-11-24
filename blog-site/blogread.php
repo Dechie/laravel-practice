@@ -1,53 +1,12 @@
 <html>
   <head>
     <title></title>
+    <link rel="stylesheet" href="style.css"> 
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      header {
-        background-color: #ffffff;
-        color: #f1f1f1
-        padding: 15px 20px;
-        
-      }
-
-      nav {
-        margin: 10px;
-        display: flex;
-        padding: 10px;
-        justify-content: space-between;
-        background-color: #f1f1f1
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-      }
-
-      nav ul li {
-        margin-right: 20px;
-      }
-      
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-      }
-    
-    .gridItem {
-        justify-content: center;
-    }
-
-    main {
+      main {
         margin: 10px;
         padding: 10px;
-    }
+      } 
     </style>
   </head>
   <body>
