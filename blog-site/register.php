@@ -1,10 +1,9 @@
-<?php require("login.class.php") ?>
+<?php require("register.class.php") ?>
 <?php
   if (isset($_POST['submit'])) {
-    $user = new LoginUser($_POST['username'], $_POST['password']);
+    $user = new RegisterUser($_POST['username'], $_POST['password']);
   }
 ?>
-
 <!DOCTYPE html>
 <html lang="">
   <head>
@@ -22,7 +21,7 @@
           <li><a href="#">About</a></li>
         </ul> 
         <ul>
-          <li><a href="#">Login</a></li>
+          <li><a href="login.php">Login</a></li>
         </ul>
       </nav>
          </header>
@@ -30,11 +29,13 @@
       <div class="login-page">
     <div class="login-form">
       <h2>Login</h2>
-      <form action"" method="POST">
+      <form method="POST" action="">
         <input type="text" placeholder="Username" name="username" required><br>
         <input type="password" placeholder="Password" name="password" required><br>
         <input type="submit" value="Login" name="submit">
-        <p> don't have an account? <a href="register.php">Sign Up</a> </p>
+        <p> already have an account? <a href="login.php">Sign Up</a> </p>
+
+         
       </form>
       <p class="error"> <?php echo @$user->error ?> </p>
       <p class="success"> <?php echo @$user->success ?> </p>
